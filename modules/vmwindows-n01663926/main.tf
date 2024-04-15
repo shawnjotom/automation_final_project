@@ -77,5 +77,6 @@ resource "azurerm_public_ip" "windows_public_ip" {
   resource_group_name = var.resource_group_name
   location            = var.location
   allocation_method   = var.public_ip_allocation_method
+  domain_name_label = "${var.windows_vm_name}"
 }
 

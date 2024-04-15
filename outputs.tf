@@ -53,3 +53,10 @@ output "data_disk_ids" {
 output "database_instance_name" {
   value = module.postgresql_server.database_instance_name
 }
+
+output "linux_domain_names"{
+  value = module.vmlinux.vm_domain_names
+}
+output "windows_domain_names"{
+  value = module.vmwindows.windows_vm_domain_name
+}
