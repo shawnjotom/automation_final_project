@@ -4,10 +4,10 @@ resource "azurerm_availability_set" "linux_availability_set" {
   location            = var.location
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 
@@ -49,10 +49,10 @@ resource "azurerm_linux_virtual_machine" "linux_vm" {
   }
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 
@@ -67,10 +67,10 @@ resource "azurerm_virtual_machine_extension" "network_watcher" {
   depends_on = [ azurerm_linux_virtual_machine.linux_vm,null_resource.display_info ]
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 
@@ -84,10 +84,10 @@ resource "azurerm_virtual_machine_extension" "azure_monitor" {
   type_handler_version = "1.0"
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 
@@ -105,10 +105,10 @@ resource "azurerm_network_interface" "linux_nic" {
   }
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 
@@ -121,10 +121,10 @@ resource "azurerm_public_ip" "linux_public_ip" {
   domain_name_label = each.key
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 

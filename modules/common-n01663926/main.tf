@@ -6,10 +6,10 @@ resource "azurerm_log_analytics_workspace" "log_analytics_workspace" {
   retention_in_days   = 30
 
   tags = {
-    Assignment      = "CCGC 5502 Automation Assignment"
-    Name            = "Shown.JoTom"
-    ExpirationDate  = "2024-12-31"
-    Environment     = "Learning"
+    Assignment     = "CCGC 5502 Automation Project"
+    Name           = "Shown.JoTom"
+    ExpirationDate = "2024-12-31"
+    Environment    = "Project"
   }
 }
 
@@ -20,10 +20,10 @@ resource "azurerm_recovery_services_vault" "recovery_services_vault" {
   sku                 = "Standard"
 
   tags = {
-    Assignment      = "CCGC 5502 Automation Assignment"
-    Name            = "Shown.JoTom"
-    ExpirationDate  = "2024-12-31"
-    Environment     = "Learning"
+    Assignment     = "CCGC 5502 Automation Project"
+    Name           = "Shown.JoTom"
+    ExpirationDate = "2024-12-31"
+    Environment    = "Project"
   }
 }
 
@@ -35,10 +35,10 @@ resource "azurerm_storage_account" "storage_account" {
   account_replication_type = "LRS"
 
   tags = {
-    Assignment      = "CCGC 5502 Automation Assignment"
-    Name            = "Shown.JoTom"
-    ExpirationDate  = "2024-12-31"
-    Environment     = "Learning"
+    Assignment     = "CCGC 5502 Automation Project"
+    Name           = "Shown.JoTom"
+    ExpirationDate = "2024-12-31"
+    Environment    = "Project"
   }
 }
 

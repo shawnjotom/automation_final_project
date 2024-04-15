@@ -16,10 +16,10 @@ resource "azurerm_lb" "main" {
   }
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 }
 

@@ -7,10 +7,10 @@ resource "azurerm_virtual_network" "n01663926-VNET" {
   resource_group_name = var.resource_group_name
 
   tags = {
-    Assignment     = "CCGC 5502 Automation Assignment"
+    Assignment     = "CCGC 5502 Automation Project"
     Name           = "Shown.JoTom"
     ExpirationDate = "2024-12-31"
-    Environment    = "Learning"
+    Environment    = "Project"
   }
 
 }
@@ -84,11 +84,11 @@ resource "azurerm_network_security_group" "n01663926-NSG" {
   }
 
   tags = {
-      Assignment     = "CCGC 5502 Automation Assignment"
-      Name           = "Shown.JoTom"
-      ExpirationDate = "2024-12-31"
-      Environment    = "Learning"
-    }
+    Assignment     = "CCGC 5502 Automation Project"
+    Name           = "Shown.JoTom"
+    ExpirationDate = "2024-12-31"
+    Environment    = "Project"
+  }
 }
 
 resource "azurerm_subnet_network_security_group_association" "n01663926-NSG-Association" {

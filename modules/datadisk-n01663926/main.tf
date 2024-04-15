@@ -8,10 +8,10 @@ resource "azurerm_managed_disk" "data_disk" {
   disk_size_gb         = var.disk_size_gb
 
   tags = {
-    Assignment      = "CCGC 5502 Automation Assignment"
-    Name            = "Shown.JoTom"
-    ExpirationDate  = "2024-12-31"
-    Environment     = "Learning"
+    Assignment     = "CCGC 5502 Automation Project"
+    Name           = "Shown.JoTom"
+    ExpirationDate = "2024-12-31"
+    Environment    = "Project"
   }
 
   
